@@ -1,0 +1,204 @@
+*{
+    font-family: "poppins";
+}
+body{
+    /* height: 100vh;
+    width: 100vw; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-Div{
+    background-color:rgb(219, 190, 250);
+    width: 95%;
+    height: 2000px;
+    border-radius: 10px;
+    text-align: center;
+}
+.main-Div:hover{
+    box-shadow: 5px 5px 20px 10px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+
+/* products styling */
+
+
+.products{
+    height: 1300px;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap
+}
+.chocolate,.biscuit,.chips,.munch,.peanut,.perk,.sevenup,.krackjack,.happyhappy{
+    background-color: rgb(246, 217, 217);
+    height: 28%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px 10px rgba(0,0,0,0.4);
+}
+
+img{
+    width: 150px;
+    height: 97px;
+    border-radius: 20px;
+}
+#input{
+    flex: 1;
+    border-radius: 10px;
+    padding: 5px;
+}
+.addtocart{
+    display: block;
+    margin-top: 10px;
+    margin-left: 43px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 6px;
+}
+.addtocart:active{
+    background-color: rgba(0, 0, 0, 0.463);
+}
+
+
+/* Checkout styling */
+
+.checkout{
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 6px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.checkout-button{
+    border-radius: 10px;
+    font-size: x-large;
+    height: 80px;
+    width: 10%;
+    /* border: none; */
+    background-color: rgb(79, 235, 79);
+    color: aliceblue;
+}
+.checkout-button:active{
+    background-color: rgb(203, 164, 117);
+}
+.checkout h1{
+    color: aliceblue;
+    position:relative;
+    right: 2%;
+    margin: auto 0;
+}
+
+
+
+/* payment options */
+
+.payment-option{
+    /* background-color: black ; */
+}
+
+.payment-option{
+    color: rgb(17, 17, 11);
+    font-weight:900;
+}
+.payment-modes{
+    background-color: rgba(0, 0, 0, 0.668);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px 6px 0px 0px;
+}
+.cash{
+    position: relative;
+    left: 25%;
+    height: 60px;
+    width: 16%;
+    border-radius: 14px;
+    background-color: greenyellow;
+    font-size: x-large;
+    border-style: solid;
+    border-color:black;
+}
+.cash:active{
+    background-color: rgb(203, 164, 117);
+}
+.gpay{
+    position: relative;
+    right: 25%;
+    height: 60px;
+    width: 16%;
+    border-radius: 14px;
+    background-color: greenyellow;
+    font-size: x-large;
+    border-style: solid;
+    border-color:black;
+
+}
+.gpay:active{
+    background-color:rgb(203, 164, 117);
+}
+
+
+
+/* discount */
+
+
+.discount-heading{
+    background-color: rgba(0, 0, 0, 0.668);
+    height: 100px;
+    position:relative;
+    bottom: 21.5px;
+}
+.discount-heading h1{
+        position: relative;
+        top: 30%;
+        color: aliceblue;
+}
+
+.discount{
+    background-color: rgba(0, 0, 0, 0.675);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 6px 6px;
+    position:relative;
+    bottom: 21.5px;
+}
+.discount-code{
+    position: relative;
+    left: 34%;
+    height: 50px;
+    width: 16%;
+    border-radius: 14px;
+    font-size: x-large;
+    border-style: solid;
+    border-color:black;
+}
+.discount-btn{
+    position: relative;
+    right: 33%;
+    height: 60px;
+    width: 16%;
+    border-radius: 14px;
+    background-color: greenyellow;
+    font-size: x-large;
+    border-style: solid;
+    border-color:black;
+}
+.discount-btn:active{
+    background-color:rgb(203, 164, 117);
+}

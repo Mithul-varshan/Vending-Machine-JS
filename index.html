@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-Div">
+        <h1>VENDING MACHINE</h1>
+        <div class="products">
+
+            <div class="chocolate"><img src="images/download-removebg-preview.png" alt="">
+            
+                <div class="chocolate-content">
+                    <h3>Snickers</h3>
+                    <p id="price1">Price: $1.50</p>
+                    <p id="stock1">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input1" min="0">
+                    <button class="addtocart" id="button1" onclick="button(id)">Add To Cart</button>    
+                </div>
+                
+            </div>
+
+            <div class="biscuit"><img src="images/hide-n-seek-biscuit-removebg-preview.png" alt="">
+
+                <div class="biscuit-content"> 
+                    <h3>Hide&Seek</h3>
+                    <p id="price2">Price: $2.50</p>
+                    <p id="stock2">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input2" min="0">
+                    <button class="addtocart" id="button2" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="chips"><img src="images/71eRbcMmZqL-removebg-preview.png" alt="">
+
+                <div class="chips-content">
+                    <h3>Lays</h3>
+                    <p id="price3">Price: $1</p>
+                    <p id="stock3">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input3" min="0">
+                    <button class="addtocart" id="button3" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="munch"><img src="images/51F9Ac+oK7L-removebg-preview.png" alt="">
+
+                <div class="munch-content">
+                    <h3>Munch</h3>
+                    <p id="price4">Price: $1.9</p>
+                    <p id="stock4">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input4" min="0">
+                    <button class="addtocart" id="button4" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="peanut"><img src="images/412407-2_10-paper-boat-crushed-chikki-peanut-bar.webp" alt="">
+
+                <div class="peanut-content">
+                    <h3>Peanut Chikki</h3>
+                    <p id="price5">Price: $2.50</p>
+                    <p id="stock5">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input5" min="0">
+                    <button class="addtocart" id="button5" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="perk"><img src="images/download-removebg-preview (2).png" alt="">
+
+                <div class="perk-content">
+                    <h3>Perk</h3>
+                    <p id="price6">Price: $0.8</p>
+                    <p id="stock6">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input6" min="0">
+                    <button class="addtocart" id="button6" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="sevenup"><img src="images/7UP.png" alt="">
+
+                <div class="sevenup-content">
+                    <h3>Seven Up</h3>
+                    <p id="price7">Price: $1.23</p>
+                    <p id="stock7">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input7" min="0">
+                    <button class="addtocart" id="button7" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="krackjack"><img src="images/stock-photo--th-march-jodhpur-city-of-rajasthan-state-in-india-parle-krackjack-biscuits-isolat-over-grey-2312494995-removebg-preview (1).png" alt="">
+
+                <div class="krackjack-content">
+                    <h3>Krack Jack</h3>
+                    <p id="price8">Price: $1.20</p>
+                    <p id="stock8">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input8" min="0">
+                    <button class="addtocart" id="button8" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="happyhappy"><img src="images/happy.png" alt="">
+
+                <div class="happyhappy-content">
+                    <h3>Happy Happy</h3>
+                    <p id="price9">Price: $1.12</p>
+                    <p id="stock9">Stock: 10</p>
+                    <input type="number" placeholder="Enter Quantity" id="input9" min="0">
+                    <button class="addtocart" id="button9" onclick="button(id)">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="checkout">
+            <button class="checkout-button" id="total" onclick="Total(id)">Checkout</button>
+            <h1 id="cost-display">Total Cost : $0</h1>
+        </div>
+        <div class="payment-option">
+            <h1>Payment Options</h1>
+        </div>
+        <div class="payment-modes">
+            <button class="cash">Pay With Cash</button>
+            <button class="gpay">Pay With Gpay</button>
+        </div>
+
+        <div class="discount-heading">
+            <h1>Have A Discount Code ?</h1>
+        </div>
+        <div class="discount">
+            <input class="discount-code" id="discount-code" type="text">
+            <button class="discount-btn" id="discount-button">Apply Discount</button>
+        </div>
+
+        <div class="exit-msg">
+            <h1 id="exitcontent"></h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
